@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HDHub</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/lib/jquery-ui/themes/base/all.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery.ui.all.min.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">HDHub</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Vhb" asp-action="Index">Disease</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+                @await Html.PartialAsync("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid body-content">
+        @RenderBody()
+        @*<hr />*@
+    </div>
+     <footer>
+            <div >
+                 <p style="margin:10px">2017 - HDHub</p>
+            </div>
+        </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jquery-ui/jquery-ui.min.js"></script>
+        <script src="~/lib/angular/angular.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lib/highcharts/highstock.js"></script>
+        <script src="~/lib/highcharts-ng/dist/highcharts-ng.min.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.12/highstock.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts-ng/0.0.12/highcharts-ng.min.js"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

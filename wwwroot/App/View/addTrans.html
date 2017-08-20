@@ -1,0 +1,47 @@
+﻿<div class="modal-header" style="padding-top:0px;margin-top:0px;padding-bottom:0px;margin-bottom:0px">
+    <h3>Add</h3>
+</div>
+
+<!--{{myForm.$valid}}-->
+
+<form name="myForm" ng-submit="myForm.$valid && ok()">
+    <!--fdfdf-->
+    <div class="modal-body">
+        <div class="panel panel-primary">
+            <div class="panel-heading panel-heading-custom">
+                ASAT - ALAT
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="active"><b>ASAT-TGO</b></td>
+                        <td>
+                            <div style="margin:2px">
+                                <input type="number" ng-model="newAsat" placeholder="0.0" class="form-control input-sm" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="active"><b>ALAT-TGP</b></td>
+                        <td><input type="number" ng-model="newAlat" placeholder="0.0" class="form-control input-sm" required></td>
+                    </tr>
+                    <tr>
+                        <td class="active" style="width:80px !important"><b>Date</b></td>
+                        <td>
+                            <div class="input-group" style="margin:2px">
+                                <input id="TransaminaseDate" date-picker-directive width="80" required ng-model="newTransDate" data-date-format="dd/mm/yyyy" placeholder="dd/mm/yyyy" class="form-control input-sm datepicker" type="datetime" style="outline-width: 1px" />
+                                <label for="TransaminaseDate" class="input-group-addon btn">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-success btn-sm sharp"><i class="glyphicon glyphicon-save"></i> Save</button>
+        <button class="btn btn-warning btn-sm sharp" ng-click="cancel()"><i class="glyphicon glyphicon-repeat"></i> Cancel</button>
+    </div>
+</form>

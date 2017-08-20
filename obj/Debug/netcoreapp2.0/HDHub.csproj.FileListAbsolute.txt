@@ -1,0 +1,11 @@
+/Users/sebastien/Dotnet/HDHub2/HDHub/bin/Debug/netcoreapp2.0/HDHub.deps.json
+/Users/sebastien/Dotnet/HDHub2/HDHub/bin/Debug/netcoreapp2.0/HDHub.runtimeconfig.json
+/Users/sebastien/Dotnet/HDHub2/HDHub/bin/Debug/netcoreapp2.0/HDHub.runtimeconfig.dev.json
+/Users/sebastien/Dotnet/HDHub2/HDHub/bin/Debug/netcoreapp2.0/HDHub.dll
+/Users/sebastien/Dotnet/HDHub2/HDHub/bin/Debug/netcoreapp2.0/HDHub.pdb
+/Users/sebastien/Dotnet/HDHub2/HDHub/obj/Debug/netcoreapp2.0/HDHub.csproj.CoreCompileInputs.cache
+/Users/sebastien/Dotnet/HDHub2/HDHub/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/sebastien/Dotnet/HDHub2/HDHub/obj/Debug/netcoreapp2.0/HDHub.AssemblyInfoInputs.cache
+/Users/sebastien/Dotnet/HDHub2/HDHub/obj/Debug/netcoreapp2.0/HDHub.AssemblyInfo.cs
+/Users/sebastien/Dotnet/HDHub2/HDHub/obj/Debug/netcoreapp2.0/HDHub.dll
+/Users/sebastien/Dotnet/HDHub2/HDHub/obj/Debug/netcoreapp2.0/HDHub.pdb
