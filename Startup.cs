@@ -19,6 +19,7 @@ namespace HDHub
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            //ici
         }
 
         public IConfiguration Configuration { get; }
